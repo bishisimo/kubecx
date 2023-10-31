@@ -1,5 +1,5 @@
 # 简介
-项目目用于kube context的管理.
+项目用于kube context的管理.
 ## `kubex`子命令
 ### 安装
 通过git clone此项目在go环境下编译
