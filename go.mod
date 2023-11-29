@@ -17,6 +17,7 @@ require (
 	github.com/gookit/color v1.5.4
 	github.com/k0kubun/pp v3.0.1+incompatible
 	github.com/olekukonko/tablewriter v0.0.5
+	github.com/pelletier/go-toml/v2 v2.0.8
 	github.com/pkg/errors v0.9.1
 	github.com/pkg/sftp v1.13.6
 	github.com/rs/zerolog v1.30.0
@@ -51,7 +52,6 @@ require (
 	github.com/muesli/reflow v0.3.0 // indirect
 	github.com/muesli/termenv v0.15.1 // indirect
 	github.com/nsf/termbox-go v0.0.0-20190121233118-02980233997d // indirect
-	github.com/pelletier/go-toml/v2 v2.0.8 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
 	github.com/rotisserie/eris v0.5.4 // indirect
 	github.com/sahilm/fuzzy v0.1.0 // indirect

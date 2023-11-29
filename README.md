@@ -1,12 +1,11 @@
 # 简介
 项目用于kube context的管理.
-## `kubex`子命令
-### 安装
+## 安装
 通过git clone此项目在go环境下编译
-### 使用
+## 使用
 建议使用`alias`的方式简化子命令使用,例如`alias cx="kubecx"`,持久化到shell配置文件,后面的使用方式都是基于此alias的方式.
 使用前建议使用`cx init`命令初始化保存现有的context信息,后续可以通过`cx restore`恢复.
-#### 功能
+## 功能
 通过help查看具体功能
 ```shell
 cx -h
@@ -36,7 +35,7 @@ Flags:
 
 Use "crane context [command] --help" for more information about a command.
 ```
-#### 添加`context`
+### 添加`context`
 1. ssh方式,此方式需要获取到主机密码
 ```shell
 cx add root@127.0.0.1
@@ -58,7 +57,7 @@ cx add --acp https://dev.me
 }
 2023-06-16T11:57:16+08:00|INFO|kubectx.glob..func1| cmd/kubectx/add.go:36 |ok
 ```
-#### 查看`context`
+### 查看`context`
 ```shell
 cx ls
 +-------------------+----------------+-----------+-----------------+-----------------+
@@ -70,7 +69,7 @@ cx ls
 |   192.168.181.20  | global         | default   | global          | admin           |
 +-------------------+----------------+-----------+-----------------+-----------------+
 ```
-#### 选择`context`
+### 选择`context`
 使用`cx use`指定或`cx select`选择一个context
 ```shell
 cx s
@@ -82,7 +81,7 @@ Filtering:
      | 192.168.181.20 | global | default | global
 ↑ move up • ↓ move down • tab/enter choice it • tab/enter finish selection • ^C kill program
 ```
-#### 配置`prompt`
+### 配置`prompt`
 添加到shell配置文件中,例如`~/.zshrc`,可以添加参数修改具体样式
 ```shell
 PROMPT='$(cx prompt)'$PROMPT
@@ -90,12 +89,12 @@ PROMPT='$(cx prompt)'$PROMPT
 ```shell
 [⎈|arm:tsl-a]➜  workspace git:(master) ✗
 ```
-#### 设置`context`
+### 设置`context`
 可以通过set设置当前context的默认命名空间与名称,也可以指定一个context设置其默认命名空间与名称
 ```shell
 cx set -n tsl-a
 ```
-#### 删除`context`
+### 删除`context`
 通过`cx delete`删除指定context,一般为host地址,也可以用name删除
 ```shell
 cx delete 192.168.176.113
